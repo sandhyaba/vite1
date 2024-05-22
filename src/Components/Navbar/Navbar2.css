@@ -1,0 +1,104 @@
+/* General styles for the navbar */
+nav {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} */
+
+nav ul li {
+    display: inline-block;
+    margin: 3px 20px;
+    cursor: pointer;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+    margin: 5px 20px;
+}
+
+.btn {
+    background-color: aliceblue;
+    color: #333;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: #2d0769;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.menu-close-button {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: inline-block;
+        margin-right: 7px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2d0769;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 7px 0;
+        text-align: center;
+    }
+
+    .menu-close-button {
+        display: block;
+    }
+}
+
