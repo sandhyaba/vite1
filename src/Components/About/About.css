@@ -1,0 +1,55 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.left-side {
+    position: relative;
+}
+
+.right-side {
+    margin: 0 25px;
+}
+
+.about-img {
+    flex-basis: 40%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.paly-icon {
+    flex-basis: 60%;
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.right-side h4 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #000345;
+}
+
+.right-side h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000345;
+}
+
+@media(max-width:768px) {
+    .about {
+        display: inline-block;
+    }
+
+    .about-img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
