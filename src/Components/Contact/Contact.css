@@ -1,0 +1,67 @@
+.contact-col{
+    margin: 20px 30px;
+    width: 50%;
+    padding: 10px;
+}
+.msg-icon, .email-icon, .phone-icon, .location-icon{
+    width: 30px;
+    margin: 5px;
+} 
+
+.email, .phone, .location{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.contact-col p{
+    margin: 10px;
+}
+.contact-col h3{
+    margin: 10px;
+}
+
+.form label{
+    display: block; 
+    margin: 5px 15px; 
+    font-weight: bold; /* Make labels bold */
+    color: #333; /
+}
+.contact{
+    display: flex;
+}
+.form{
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+}
+.form input, textarea{
+    margin-left: 15px;
+    width: 60%;
+    padding: 5px;
+}
+.submit-btn img{
+    width: 40px;
+    padding: 5px;
+}
+.submit-btn{
+    margin-top: 10px ;
+    margin-left: 10px;
+}
+
+@media(max-width : 764px ){
+    .contact{
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .contact-col{
+        width: 90%;
+    }
+    .form input, textarea{
+        margin-left: 15px;
+        width: 80%;
+        padding: 5px;
+    }
+    
+}
