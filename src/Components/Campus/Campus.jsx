@@ -10,7 +10,7 @@ const Campus = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://192.168.1.142:6500/v1/user/message/list');
+        const response = await axios.get('http://edusity-backend.onrender.com/v1/user/message/list');
         setUserData(response.data.data);
       } catch (error) {
         console.error('Error fetching user data:', error);
