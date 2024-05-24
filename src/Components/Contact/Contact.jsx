@@ -29,7 +29,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        fetch('http://192.168.1.142:6500/v1/user/contact/form', {
+        fetch('https://edusity-backend.onrender.com/v1/user/contact/form', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
