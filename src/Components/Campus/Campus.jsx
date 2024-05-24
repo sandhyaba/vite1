@@ -5,7 +5,6 @@ import Arrow from '../../assets/white-arrow.png';
 
 const Campus = () => {
   const [userData, setUserData] = useState([]);
-  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,23 +19,15 @@ const Campus = () => {
     fetchData();
   }, []);
 
-  const handleChange = () => {
-    setExpanded(!expanded);
-  };
-
+ 
   return (
     <div className='campus'>
       {userData.map((user, index) => (
-        <div className={`gallery ${!expanded && index >= 3 ? 'hidden' : ''}`} key={index}>
+        <div className='gallery' key={index}>
           <img src={user.image} alt={`image-${index}`} className='image' />
         </div>
       ))}
-      <div className="see-more-img">
-        <button className='see-btn' onClick={handleChange}>
-          {expanded ? 'See Less' : 'See More Here'}
-          <img src={Arrow} alt="arrow" className='arrow-img' />
-        </button>
-      </div>
+      
     </div>
   );
 }
