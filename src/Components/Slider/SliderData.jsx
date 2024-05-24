@@ -11,7 +11,7 @@ export default function MultipleItems() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://edusity-backend.onrender.com/v1/user/message/list');
+                const response = await axios.get('https://edusity-backend.onrender.com/v1/user/message/list');
                 setUserData(response.data.data);
             } catch (error) {
                 console.error('Error fetching user data:', error);
